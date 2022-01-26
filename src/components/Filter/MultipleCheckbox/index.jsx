@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { components } from "react-select";
 import { default as ReactSelect } from "react-select";
-import { colourOptions } from "./data.js";
+import { hospitalOptions } from "utils/const/hospital.js";
+import { specializationOptions } from "utils/const/specialization.js";
 
 function MultipleCheckbox(props) {
   const [optionSelected, setOptionSelected] = useState([]);
@@ -22,7 +23,7 @@ function MultipleCheckbox(props) {
 
   return (
     <ReactSelect
-      options={colourOptions}
+      options={props.placeholder === "Hospital" ? hospitalOptions : specializationOptions}
       isMulti
       closeMenuOnSelect={false}
       hideSelectedOptions={false}
