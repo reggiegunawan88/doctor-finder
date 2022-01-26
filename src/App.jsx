@@ -1,13 +1,10 @@
+import Filter from "components/Filter";
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p className="text-red-500">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
+    <div className="max-w-3xl mx-auto font-sans">
+      <header className="mt-5">
+        <Filter />
       </header>
     </div>
   );
