@@ -8,7 +8,6 @@ export const SearchContext = createContext();
 function Home() {
   const [userData, setUserData] = useState([]);
   const [searchResult, setSearchResult] = useState([]);
-  const [searchQuery, setSearchQuery] = useState([]);
 
   useEffect(() => {
     const fetchData = () => {
@@ -31,14 +30,18 @@ function Home() {
   };
 
   const filterHospital = (value) => {
-    console.log(value);
     // filter hospital initial from userData
     const result = userData.filter((item) => {
       var hospital = item.hospital[0].name;
-      console.log(hospital);
-      return item.name.toLowerCase().includes(value.toLowerCase());
+      return value.indexOf(hospital) > -1;
     });
-    // setSearchResult(result);
+
+    // if filter value empty, set initial data
+    if (!value.length) {
+      return setSearchResult(userData);
+    } else {
+      setSearchResult(result);
+    }
   };
 
   return (
