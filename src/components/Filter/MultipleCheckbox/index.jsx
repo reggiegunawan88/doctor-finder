@@ -7,8 +7,8 @@ import { SearchContext } from "pages/Home";
 
 /**
  *
- * @param {*} props
- * @returns Option component for dropdown
+ * @param {Object} props
+ * @returns {Object} Option component for dropdown
  */
 const Option = (props) => {
   return (
