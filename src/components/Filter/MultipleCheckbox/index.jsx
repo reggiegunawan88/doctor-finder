@@ -5,27 +5,39 @@ import { hospitalOptions } from "utils/const/hospital.js";
 import { specializationOptions } from "utils/const/specialization.js";
 import { SearchContext } from "pages/Home";
 
+/**
+ *
+ * @param {*} props
+ * @returns Option component for dropdown
+ */
+const Option = (props) => {
+  return (
+    <div>
+      <components.Option {...props}>
+        <input type="checkbox" checked={props.isSelected} onChange={() => null} /> <label>{props.label}</label>
+      </components.Option>
+    </div>
+  );
+};
+
 function MultipleCheckbox(props) {
   const searchCtx = useContext(SearchContext);
   const [optionSelected, setOptionSelected] = useState([]);
 
-  const Option = (props) => {
-    return (
-      <div>
-        <components.Option {...props}>
-          <input type="checkbox" checked={props.isSelected} onChange={() => null} /> <label>{props.label}</label>
-        </components.Option>
-      </div>
-    );
-  };
-
   const handleChange = (selected) => {
     setOptionSelected(selected);
 
-    // set filter value to context, ex: ['Mitra Keluarga Bintaro', 'Mitra Keluarga Gading Serpong']
+    /**
+     * set each filter value to parent context
+     * format : ['Mitra Keluarga Bintaro', 'Mitra Keluarga Gading Serpong']
+     */
     let filterValue = [];
     selected.map((item) => filterValue.push(item.label));
-    searchCtx.filterHospital(filterValue);
+    if (props.placeholder === "Hospital") {
+      searchCtx.setFilterHospital(filterValue);
+    } else {
+      searchCtx.setFilterSpecialization(filterValue);
+    }
   };
 
   return (

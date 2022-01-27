@@ -5,8 +5,9 @@ import MultipleCheckbox from "./MultipleCheckbox";
 function Filter() {
   const searchCtx = useContext(SearchContext);
 
+  // set state to parent context
   const handleNameInput = (value) => {
-    searchCtx.searchName(value);
+    searchCtx.setFilterName(value.toLowerCase());
   };
 
   return (
