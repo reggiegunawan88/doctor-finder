@@ -5,16 +5,11 @@ Description: A simple single application page to let user find doctor based on c
 ## Features
 Apps main features consist:
 
-- Search Doctor
-● A text input●Will display result on doctor list that are relevant to doctor name based on the keywordsentered
+- Search Doctor : Will display result on doctor list that are relevant to doctor name based on the keywords entered
 
-- Filter by Hospital
-● A dropdown input with checkbox●Will display result on doctor list based on hospital.
-● Multiple selection
+- Filter by Hospital: A dropdown input with checkbox, will display result on doctor list based on hospital.
 
-- Filter by Specialization●A dropdown input with checkbox
-● Will display result on doctor list based on Specialization
-● Multiple selection
+- Filter by Specialization: A dropdown input with checkbox, will display result on doctor list based on Specialization
 
 ## Information
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
