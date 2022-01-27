@@ -28,3 +28,6 @@ Mockup provided by: https://cms-bucket-alteacare.s3.ap-southeast-1.amazonaws.com
 
 ![image](https://user-images.githubusercontent.com/44907916/151336830-cf3b7277-851a-46d7-83cb-1eb9cbee47fe.png)
 
+
+Copyright © by Reggie Gunawan
+
