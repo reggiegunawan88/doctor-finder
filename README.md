@@ -10,6 +10,11 @@ Mockup provided by: https://cms-bucket-alteacare.s3.ap-southeast-1.amazonaws.com
 
 # Screenshoot
 
+## Homepage:
+
 ![image](https://user-images.githubusercontent.com/44907916/151336452-99675fe1-eddc-4886-ab4b-2b9a2fe7fcaf.png)
 
+## Multiple filter applied:
+
+![image](https://user-images.githubusercontent.com/44907916/151336830-cf3b7277-851a-46d7-83cb-1eb9cbee47fe.png)
 
