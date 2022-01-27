@@ -1,3 +1,6 @@
+/**
+ * List of API consume services
+ */
 import axios from "axios";
 
 export const getDoctorData = async () => {

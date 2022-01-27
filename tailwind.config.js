@@ -1,3 +1,4 @@
+// Tailwind config boilerplate
 module.exports = {
   purge: {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
